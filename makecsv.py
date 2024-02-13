@@ -5,14 +5,14 @@ import csv
 from tqdm import tqdm
 
 # Email for searching NCBI database
-Entrez.email = "dtm77@drexel.edu"
+Entrez.email = "example@drexel.edu"
 
 # Create csv file for storing database results
 csv_file = open('sequence_files.csv', mode='a', newline='')
 writer = csv.writer(csv_file)
 
 # Path of "sequences" folder
-directory_path = r'C:\Users\DrewT\Desktop\Class Files\2024 1 Winter\Electrical Engineering Signals 450\Project 3\Data\sequences'
+directory_path = r'C:\...\sequences'
 
 # Get list of folders within "sequences"
 for folder_name in tqdm(os.listdir(directory_path)):
