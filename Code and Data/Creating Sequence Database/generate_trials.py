@@ -7,6 +7,9 @@ import csv
 # Change to the desired location of the main directory that each trial will be in
 trial_loc = r"C:\...\trials"
 
+# Change to the location of the txt files with the desired training sequences for each trial
+folder_path = r"C:\...\datatxt"
+
 # Change to location of testnumberrows.csv (created by make_test_row_index.py)
 testrows_dir = r"C:\...\testnumberrows.csv"
 
@@ -185,9 +188,6 @@ def write_fna_file(rows, filename):
     with open(filename, 'w') as f:
         for row in rows:
             f.write(row + '\n')
-
-# Change to the location of the txt files with the desired training sequences for each trial
-folder_path = r"C:\...\datatxt"
 
 # Create dictionary of all txt file values
 groups_of_numbers = read_numbers_from_folder(folder_path)
