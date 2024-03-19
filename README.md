@@ -1,5 +1,7 @@
 Project 3: Naïve Bayes Classifier 
 
+(Instructions for code are located within their respective folder's README.md)
+
 All of the script files are saved on Picotte:
 
 \ifs\group\eces450650Grp\ECES45060_WI\project3
